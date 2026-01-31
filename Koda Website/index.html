@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koda Build - Custom Business Apps That Work for You</title>
+    <meta name="description" content="Get a custom business app built for your needs. No huge upfront costs, no generic software. Starting at $50/month with full support included.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="Logo.png" alt="Koda Build" class="logo-img">
+            </a>
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#how-it-works" class="nav-link">How it Works</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+            <button class="btn btn-primary" onclick="openModal('demo')">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">
+                We Build Your Custom App<br>
+                <span class="gradient-text">For Free. Seriously.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Most agencies charge $10,000-$50,000 just to build your app. We don't. We build it for free because we're confident you'll love it. Test it for 60 days. If it's perfect, pay just $50-$300/month. If not, walk away—no charge.
+            </p>
+            <div class="hero-cta">
+                <button class="btn btn-large btn-primary" onclick="openModal('trial')">
+                    Get Your Free App Built
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="btn btn-large btn-secondary" onclick="openModal('demo')">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M8 7L13 10L8 13V7Z" fill="currentColor"/>
+                    </svg>
+                    See How It Works
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-value">$0</div>
+                    <div class="stat-label">Development cost</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">$50+</div>
+                    <div class="stat-label">Monthly (if you keep it)</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">60 days</div>
+                    <div class="stat-label">Free testing period</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Your Business Needs a Custom App</h2>
+                <p class="section-subtitle">Your customers want convenience. A branded app keeps them coming back more often.</p>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">5.6x</div>
+                    <div class="stat-label">More customer engagement</div>
+                    <p class="stat-desc">Customers with your branded app engage 5.6x more than those without (App Annie, 2025)</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">89%</div>
+                    <div class="stat-label">Prefer ordering via app</div>
+                    <p class="stat-desc">89% of customers prefer using a business's app over calling or visiting for orders</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3.2x</div>
+                    <div class="stat-label">Higher purchase frequency</div>
+                    <p class="stat-desc">App users visit 3.2x more often than non-app customers (NRF Study, 2024)</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">67%</div>
+                    <div class="stat-label">Increase in repeat customers</div>
+                    <p class="stat-desc">Small businesses with branded apps see 67% more repeat purchases within 6 months</p>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Easy Online Ordering</h3>
+                    <p class="feature-description">Customers order, book, or schedule directly from their phone. No more missed calls or busy phone lines.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/>
+                            <rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/>
+                            <rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/>
+                            <rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Loyalty & Rewards Built-In</h3>
+                    <p class="feature-description">Reward repeat customers automatically. Points, discounts, and special offers drive them back again and again.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Push Notifications</h3>
+                    <p class="feature-description">Reach customers instantly with promotions, reminders, and updates. No email marketing needed.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 3H21V7M21 3L13 11M10 3H7C5.89543 3 5 3.89543 5 5V8M3 10V17C3 18.1046 3.89543 19 5 19H8M10 21H17C18.1046 21 19 20.1046 19 19V16M21 14V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Seamless Payments</h3>
+                    <p class="feature-description">Apple Pay, Google Pay, credit cards—all integrated. Customers pay in seconds, you get paid faster.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18H19C20.1046 18 21 17.1046 21 16Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V18" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Know Your Customers</h3>
+                    <p class="feature-description">See what customers buy, when they visit, and what they love. Use data to grow your business smarter.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Always On Your Customers' Phones</h3>
+                    <p class="feature-description">Your logo sits on their home screen 24/7. When they need you, you're just a tap away.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section class="integrations-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">No New Workflows Required</h2>
+                <p class="section-subtitle">Your app plugs directly into the systems you already use. Keep your existing workflows—we'll build the app around them, not the other way around.</p>
+            </div>
+            <div class="integrations-simple">
+                <div class="integration-categories">
+                    <div class="integration-item">
+                        <div class="integration-icon">💳</div>
+                        <h3>Payment Processors</h3>
+                        <p>Apple Pay, Google Pay, Stripe, Square, PayPal—connect to whatever you already use. No switching required.</p>
+                    </div>
+                    <div class="integration-item">
+                        <div class="integration-icon">🖥️</div>
+                        <h3>Point of Sale Systems</h3>
+                        <p>Square, Clover, Toast, Shopify POS—your app syncs with your existing POS in real-time. Inventory, orders, everything.</p>
+                    </div>
+                    <div class="integration-item">
+                        <div class="integration-icon">⭐</div>
+                        <h3>Loyalty & CRM</h3>
+                        <p>Integrate your current rewards system or we'll build one custom. Customer data stays synchronized across platforms.</p>
+                    </div>
+                    <div class="integration-item">
+                        <div class="integration-icon">📊</div>
+                        <h3>Business Tools</h3>
+                        <p>QuickBooks, Mailchimp, Google Calendar, Zapier—if it has an API, we can connect it. Your app becomes the hub.</p>
+                    </div>
+                </div>
+                
+                <div class="integration-callout">
+                    <div class="callout-icon">🔌</div>
+                    <div class="callout-content">
+                        <h3>API-First Architecture</h3>
+                        <p>We don't force you to change how you work. Instead, we build your app to work with your existing systems via APIs. Orders from your app flow into your POS. Inventory updates in real-time. Payments sync with your accounting software. <strong>You keep doing business your way—we just make it mobile.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Smart Notifications Section (Combined) -->
+    <section class="ai-notifications-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="ai-icon">🔔</div>
+                <h2 class="section-title">Smart Automated Notifications</h2>
+                <p class="section-subtitle">Better than email, optimized for maximum engagement.</p>
+            </div>
+            
+            <!-- Email Comparison -->
+            <div class="comparison-section">
+                <h3 class="comparison-title">Why Push Notifications Beat Email</h3>
+                <div class="comparison-grid-compact">
+                    <div class="comparison-card-compact">
+                        <div class="comparison-label">Open Rate</div>
+                        <div class="comparison-row">
+                            <div class="comparison-item winner">
+                                <div class="comparison-value">90%</div>
+                                <div class="comparison-name">Push</div>
+                            </div>
+                            <div class="comparison-vs">vs</div>
+                            <div class="comparison-item">
+                                <div class="comparison-value">20%</div>
+                                <div class="comparison-name">Email</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-card-compact">
+                        <div class="comparison-label">Delivery Speed</div>
+                        <div class="comparison-row">
+                            <div class="comparison-item winner">
+                                <div class="comparison-value">Instant</div>
+                                <div class="comparison-name">Push</div>
+                            </div>
+                            <div class="comparison-vs">vs</div>
+                            <div class="comparison-item">
+                                <div class="comparison-value">Hours</div>
+                                <div class="comparison-name">Email</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-card-compact">
+                        <div class="comparison-label">Visibility</div>
+                        <div class="comparison-row">
+                            <div class="comparison-item winner">
+                                <div class="comparison-value">Screen</div>
+                                <div class="comparison-name">Push</div>
+                            </div>
+                            <div class="comparison-vs">vs</div>
+                            <div class="comparison-item">
+                                <div class="comparison-value">Inbox</div>
+                                <div class="comparison-name">Email</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Smart Features -->
+            <div class="ai-enhancement-section">
+                <h3 class="ai-enhancement-title">Smart Automation Makes Them Better</h3>
+                <div class="ai-features-grid">
+                    <div class="ai-feature-card">
+                        <div class="ai-feature-icon">⏰</div>
+                        <h4>Behavior-Based Timing</h4>
+                        <p>Send notifications based on customer activity patterns and preferences for maximum engagement.</p>
+                    </div>
+                    
+                    <div class="ai-feature-card">
+                        <div class="ai-feature-icon">🎯</div>
+                        <h4>Smart Segmentation</h4>
+                        <p>Automatically target customers by location, purchase history, and interests. Every message reaches the right audience.</p>
+                    </div>
+                    
+                    <div class="ai-feature-card">
+                        <div class="ai-feature-icon">📊</div>
+                        <h4>Analytics-Driven Frequency</h4>
+                        <p>Never spam your customers. Analytics determine the ideal cadence to prevent notification fatigue.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ai-unlimited-box">
+                <div class="unlimited-icon">∞</div>
+                <div class="unlimited-content">
+                    <h3>Unlimited Notifications Included</h3>
+                    <p>No usage limits. No extra fees. Smart automation ensures quality over quantity, so every message counts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="how-it-works" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works: Zero Risk, All Reward</h2>
+                <p class="section-subtitle">No upfront costs. No development fees. Just a low monthly subscription if you love it.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Discovery Call</h3>
+                        <p class="step-description">Quick 30-minute call to understand your business, workflows, and what you need. No sales pressure, just planning.</p>
+                        <div class="step-time">⏱️ 30-45 minutes</div>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">We Build Your App (FREE)</h3>
+                        <p class="step-description">Our team designs, develops, and delivers your custom app. Zero development cost—normally $10k-50k, but free for you.</p>
+                        <div class="step-time">⏱️ 2-4 weeks</div>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Test Free, Then Decide</h3>
+                        <p class="step-description">Use the app for 60 days free. If you love it, choose a plan starting at $50/month. If not, walk away—no bill, no hassle.</p>
+                        <div class="step-time">⏱️ 60-day trial</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">No development fees. No setup costs. Just a low monthly subscription—and only if you keep the app after your free trial.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                    <h3 class="pricing-name">Starter</h3>
+                        <p class="pricing-desc">Perfect for solo entrepreneurs and small teams</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">$50</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 1 custom interface</li>
+                        <li>✓ Up to 100 users</li>
+                        <li>✓ Cloud hosting & backend included</li>
+                        <li>✓ Basic automations</li>
+                        <li>✓ Smart automated notifications</li>
+                        <li>✓ Up to 1 API integration</li>
+                        <li>✓ Self-service content dashboard</li>
+                        <li>✓ Email support</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openModal('trial')">Get Started</button>
+                </div>
+
+                <div class="pricing-card pricing-featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                    <h3 class="pricing-name">Professional</h3>
+                        <p class="pricing-desc">For growing businesses with complex needs</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">$125</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Up to 3 custom interfaces</li>
+                        <li>✓ Up to 500 users</li>
+                        <li>✓ Cloud hosting & backend included</li>
+                        <li>✓ Advanced automations</li>
+                        <li>✓ Smart automated notifications</li>
+                        <li>✓ Up to 3 API integrations</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Custom analytics</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="openModal('trial')">Get Started</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                    <h3 class="pricing-name">Enterprise</h3>
+                    <p class="pricing-desc">For established businesses at scale</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">$300+</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited custom interfaces</li>
+                        <li>✓ Unlimited users</li>
+                        <li>✓ Cloud hosting & backend included</li>
+                        <li>✓ Complex multi-system integrations</li>
+                        <li>✓ Advanced notification targeting</li>
+                        <li>✓ Custom API development</li>
+                        <li>✓ Advanced security</li>
+                        <li>✓ Dedicated support team</li>
+                        <li>✓ SLA guarantees</li>
+                        <li>✓ White-label option</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openModal('demo')">Contact Sales</button>
+                </div>
+            </div>
+            <div class="pricing-footer">
+                <p>💡 <strong>Remember:</strong> We build your app for FREE (normally $10k-50k). You only pay the monthly fee if you love it after the 60-day trial. Need more users? Add them for just $5/user/month.</p>
+            </div>
+
+            <!-- Why Free Explainer -->
+            <div class="why-free-box">
+                <h3 class="why-free-title">How can we offer free development?</h3>
+                <p class="why-free-text">
+                    Building custom apps used to cost $50k+ because everything was done by hand. Thanks to modern development tools, AI-assisted coding, and reusable frameworks, we can build apps 10x faster than traditional agencies. <strong>Instead of charging huge upfront fees, we build it free and share in your ongoing success through a low monthly subscription.</strong> If it doesn't work for you, we don't make money. Simple as that.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section section-alt">
+        <div class="container-narrow">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+            <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Seriously, no development costs at all?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                <div class="faq-answer">
+                        <p>Correct. Zero development fees. Custom apps typically cost $10,000-$50,000+ to build. We waive all of that because we're confident you'll love the result. We build your app for free, you test it for 60 days, and if you keep it, you only pay the low monthly subscription ($50-$300/month). That's it.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Will customers know Koda built the app?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                <div class="faq-answer">
+                        <p>No. Your app is 100% branded as yours—your logo, your colors, your name. There's no Koda branding anywhere in the customer-facing app. It looks completely custom and professional, built exclusively for your business.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How are content updates handled?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                <div class="faq-answer">
+                        <p>If your app pulls data from an API (menu from your POS, products from Shopify, etc.), updates are <strong>automatic and included</strong>—no extra cost. For manual content changes you request (like changing images, text, or layouts), Starter plans are billed at $150/hour. Professional plans include 1 hour/month of changes, then $125/hour. Enterprise plans include 3 hours/month, then $100/hour. Or, we can set up a self-service dashboard so you make updates yourself anytime, free.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What if I don't want to keep the app?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                <div class="faq-answer">
+                        <p>No problem—just walk away. No bills, no cancellation fees, no questions asked. We'll even export your data if you want it. We only succeed if you love the app enough to pay for it monthly, so there's zero pressure.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What's included in the monthly price?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                <div class="faq-answer">
+                        <p>Everything: cloud hosting, automatic backups, security updates, maintenance, bug fixes, feature updates, and ongoing support. No hidden fees.</p>
+                </div>
+            </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What features do customers expect in an app?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Everything they're used to.</strong> We include: Apple Pay & Google Pay payments, push notifications, SMS messaging, calendar integration, photo galleries, Google Maps location integration, social media sharing (Instagram/Facebook), reviews & ratings, and more. Your customers get the smooth, modern experience they expect.</p>
+                    </div>
+                </div>
+
+            <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does development take?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                <div class="faq-answer">
+                        <p>Most apps are ready in 2-4 weeks. Simple apps can be done faster, complex enterprise apps may take longer. We'll give you an accurate timeline during our initial consultation based on your specific requirements.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do we own the app?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                <div class="faq-answer">
+                        <p>You lease the app and its functionality while maintaining an active subscription. This model keeps costs low and includes continuous updates and support. If you cancel, we can discuss options for purchasing the source code outright.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What if we want to cancel?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Cancel anytime with 30 days' notice. We'll export all your data in standard formats (CSV, JSON, SQL). No cancellation fees, no hassle, no hard feelings. We want you to stay because the app is valuable, not because you're locked in.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Get Your Custom App Built—Free</h2>
+                <p class="cta-subtitle">Save $10,000+ in development costs. Test for 60 days. Only pay the monthly fee if you love it.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-large btn-white" onclick="openModal('trial')">Start Free Build</button>
+                    <button class="btn btn-large btn-ghost" onclick="openModal('demo')">Schedule a Call</button>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.666 5L7.49935 14.1667L3.33268 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>$0 development cost</span>
+                    </div>
+                    <div class="cta-feature">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.666 5L7.49935 14.1667L3.33268 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>No credit card needed</span>
+                    </div>
+                    <div class="cta-feature">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.666 5L7.49935 14.1667L3.33268 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>60-day free trial</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="Logo.png" alt="Koda Build" class="logo-img">
+                    </div>
+                    <p class="footer-tagline">Custom apps built for your business. No compromise.</p>
+                </div>
+            <div class="footer-col">
+                    <h4 class="footer-title">Product</h4>
+                    <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                    <a href="#how-it-works">How it Works</a>
+                    <a href="#">Case Studies</a>
+            </div>
+            <div class="footer-col">
+                    <h4 class="footer-title">Company</h4>
+                    <a href="#">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-col">
+                    <h4 class="footer-title">Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Security</a>
+                    <a href="#">GDPR</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Koda Build. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter">𝕏</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="GitHub">⚡</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal: Trial -->
+    <div id="trialModal" class="modal">
+        <div class="modal-overlay" onclick="closeModal('trial')"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('trial')" aria-label="Close">×</button>
+            <h2 class="modal-title">Get Your App Built Free</h2>
+            <p class="modal-subtitle">Save $10k+ in development costs. We'll build your custom app for free, you test it for 60 days, then decide.</p>
+            <form class="modal-form" onsubmit="handleSubmit(event, 'trial')">
+                <div class="form-row">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" required placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required placeholder="john@company.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Business Name</label>
+                    <input type="text" required placeholder="Acme Inc.">
+                </div>
+                <div class="form-group">
+                    <label>What does your business need?</label>
+                    <textarea required rows="4" placeholder="Tell us about your workflows, pain points, and what you're looking to build..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Start Free Build</button>
+                <p class="form-note">💰 $0 development cost • No credit card • Only pay monthly if you keep it</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Demo -->
+    <div id="demoModal" class="modal">
+        <div class="modal-overlay" onclick="closeModal('demo')"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('demo')" aria-label="Close">×</button>
+            <h2 class="modal-title">Schedule a Demo</h2>
+            <p class="modal-subtitle">Let's discuss your needs and show you what's possible.</p>
+            <form class="modal-form" onsubmit="handleSubmit(event, 'demo')">
+                <div class="form-row">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" required placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required placeholder="john@company.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Business Name</label>
+                    <input type="text" required placeholder="Acme Inc.">
+                </div>
+                <div class="form-group">
+                    <label>Phone (optional)</label>
+                    <input type="tel" placeholder="(555) 123-4567">
+                </div>
+                <div class="form-group">
+                    <label>Best time to contact</label>
+                    <input type="text" required placeholder="e.g., Weekdays 2-4 PM EST">
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Schedule Demo</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
