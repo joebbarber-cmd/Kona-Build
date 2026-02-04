@@ -1461,6 +1461,42 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0.5rem;
 }
 
+.optional-details {
+    border: 2px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: #fff;
+    padding: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.optional-summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 0.875rem 1rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.optional-summary::-webkit-details-marker {
+    display: none;
+}
+
+.optional-summary::after {
+    content: "▾";
+    float: right;
+    color: var(--text-tertiary);
+}
+
+.optional-details[open] .optional-summary::after {
+    content: "▴";
+}
+
+.optional-body {
+    border-top: 1px solid var(--border);
+    padding: 1rem 1rem 0.5rem;
+}
+
 .form-group input::placeholder,
 .form-group textarea::placeholder {
     color: var(--text-tertiary);
